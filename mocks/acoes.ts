@@ -23,7 +23,7 @@ export default [
       [-2.5290, -44.3068],
       [-2.5411, -44.2635]
     ],
-    "status": "concluida"
+    "status": "concluido"
   },
   {
     "id": 103,
@@ -65,7 +65,7 @@ export default [
       [-2.5217, -44.2793],
       [-2.5217, -44.2803]
     ],
-    "status": "concluida"
+    "status": "concluido"
   },
   {
     "id": 106,
@@ -79,7 +79,7 @@ export default [
       [-2.5015, -44.3155],
       [-2.5015, -44.3165]
     ],
-    "status": "concluida"
+    "status": "concluido"
   },
   {
     "id": 107,
