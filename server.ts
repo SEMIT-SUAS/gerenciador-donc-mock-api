@@ -1,12 +1,17 @@
 import Fastify from 'fastify'
 
 import { fastifyStatic } from '@fastify/static'
+import { fastifyCors } from '@fastify/cors'
 import path from 'path';
 
 import denuncias from './mocks/denuncias'
 import acoes from './mocks/acoes'
 
 const server = Fastify()
+server.register(fastifyCors, {
+    origin: '*',
+})
+
 server.register(fastifyStatic, {
   root: path.join(__dirname, 'uploads')
 })
