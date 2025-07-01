@@ -6,6 +6,7 @@ import path from 'path';
 
 import denuncias from './mocks/denuncias'
 import acoes from './mocks/acoes'
+import categories from './mocks/categories';
 
 const server = Fastify()
 server.register(fastifyCors, {
@@ -29,6 +30,10 @@ server.get("/denuncias", (request, reply) => {
 
 server.get("/acoes", (request, reply) => {
     return reply.send(acoes)
+})
+
+server.get("/categories", (request, reply) => {
+    return reply.send(categories)
 })
 
 server.listen({
