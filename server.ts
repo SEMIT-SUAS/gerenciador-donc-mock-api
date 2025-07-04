@@ -11,6 +11,8 @@ import categories from './mocks/categories';
 const server = Fastify()
 server.register(fastifyCors, {
     origin: '*',
+    methods: ['GET', 'PUT', 'POST', 'DELETE', 'PATCH', 'OPTIONS']
+
 })
 
 server.register(fastifyStatic, {
@@ -35,6 +37,37 @@ server.get("/acoes", (request, reply) => {
 server.get("/categories", (request, reply) => {
     return reply.send(categories)
 })
+
+interface UpdateDenunciaParams {
+    id: string;
+}
+
+interface UpdateDenunciaBody {
+    acaoId: number;
+    status: 'aberto' | 'em_andamento' | 'concluido';
+}
+
+server.patch<{ Params: UpdateDenunciaParams, Body: UpdateDenunciaBody }>("/denuncias/:id", (request, reply) => {
+    const id = parseInt(request.params.id);
+    const { acaoId, status } = request.body;
+
+    const denunciaIndex = denuncias.findIndex((d: any) => d.id === id);
+
+    if (denunciaIndex === -1) {
+        return reply.status(404).send({ message: "Denúncia não encontrada." });
+    }
+
+    const denunciaAtualizada = {
+        ...denuncias[denunciaIndex],
+        acaoId: acaoId,
+        status: status,
+    };
+
+    denuncias[denunciaIndex] = denunciaAtualizada;
+
+    return reply.status(200).send(denunciaAtualizada);
+});
+
 
 server.listen({
     host: '0.0.0.0',
