@@ -25,7 +25,8 @@ export default [
       }
     ],
     "status": "em_andamento",
-    "acaoId": 101
+    "acaoId": 101,
+    "motivoStatus": null as string | null
   },
   {
     "id": 2,
@@ -49,7 +50,8 @@ export default [
       }
     ],
     "status": "aberto",
-    "acaoId": null
+    "acaoId": null,
+    "motivoStatus": null as string | null
   },
   {
     "id": 3,
@@ -73,7 +75,8 @@ export default [
       }
     ],
     "status": "aberto",
-    "acaoId": null
+    "acaoId": null,
+    "motivoStatus": null as string | null
   },
   {
     "id": 4,
@@ -97,7 +100,8 @@ export default [
       }
     ],
     "status": "concluido",
-    "acaoId": 102
+    "acaoId": 102,
+    "motivoStatus": null as string | null
   },
   {
     "id": 5,
@@ -121,7 +125,8 @@ export default [
       }
     ],
     "status": "aberto",
-    "acaoId": null
+    "acaoId": null,
+    "motivoStatus": null as string | null
   },
   {
     "id": 6,
@@ -153,7 +158,8 @@ export default [
       }
     ],
     "status": "aberto",
-    "acaoId": null
+    "acaoId": null,
+    "motivoStatus": null as string | null
   },
   {
     "id": 7,
@@ -177,7 +183,8 @@ export default [
       }
     ],
     "status": "em_andamento",
-    "acaoId": 103
+    "acaoId": 103,
+    "motivoStatus": null as string | null
   },
   {
     "id": 8,
@@ -201,7 +208,8 @@ export default [
       }
     ],
     "status": "concluido",
-    "acaoId": 102
+    "acaoId": 102,
+    "motivoStatus": null as string | null
   },
   {
     "id": 9,
@@ -225,7 +233,8 @@ export default [
       }
     ],
     "status": "indeferido",
-    "acaoId": null
+    "acaoId": null,
+    "motivoStatus": null as string | null
   },
   {
     "id": 10,
@@ -249,7 +258,8 @@ export default [
       }
     ],
     "status": "aberto",
-    "acaoId": null
+    "acaoId": null,
+    "motivoStatus": null as string | null
   },
   {
     "id": 11,
@@ -277,7 +287,8 @@ export default [
       }
     ],
     "status": "em_andamento",
-    "acaoId": 104
+    "acaoId": 104,
+    "motivoStatus": null as string | null
   },
   {
     "id": 12,
@@ -301,7 +312,8 @@ export default [
       }
     ],
     "status": "indeferido",
-    "acaoId": null
+    "acaoId": null,
+    "motivoStatus": null as string | null
   },
   {
     "id": 13,
@@ -325,7 +337,8 @@ export default [
       }
     ],
     "status": "aberto",
-    "acaoId": null
+    "acaoId": null,
+    "motivoStatus": null as string | null
   },
   {
     "id": 14,
@@ -349,7 +362,8 @@ export default [
       }
     ],
     "status": "concluido",
-    "acaoId": 105
+    "acaoId": 105,
+    "motivoStatus": null as string | null
   },
   {
     "id": 15,
@@ -373,7 +387,8 @@ export default [
       }
     ],
     "status": "aberto",
-    "acaoId": null
+    "acaoId": null,
+    "motivoStatus": null as string | null
   },
   {
     "id": 16,
@@ -397,7 +412,8 @@ export default [
       }
     ],
     "status": "aberto",
-    "acaoId": null
+    "acaoId": null,
+    "motivoStatus": null as string | null
   },
   {
     "id": 17,
@@ -421,7 +437,8 @@ export default [
       }
     ],
     "status": "aberto",
-    "acaoId": null
+    "acaoId": null,
+    "motivoStatus": null as string | null
   },
   {
     "id": 18,
@@ -445,7 +462,8 @@ export default [
       }
     ],
     "status": "concluido",
-    "acaoId": 106
+    "acaoId": 106,
+    "motivoStatus": null as string | null
   },
   {
     "id": 19,
@@ -469,7 +487,8 @@ export default [
       }
     ],
     "status": "aberto",
-    "acaoId": null
+    "acaoId": null,
+    "motivoStatus": null as string | null
   },
   {
     "id": 20,
@@ -493,7 +512,8 @@ export default [
       }
     ],
     "status": "em_andamento",
-    "acaoId": 107
+    "acaoId": 107,
+    "motivoStatus": null as string | null
   },
   {
     "id": 21,
@@ -517,6 +537,7 @@ export default [
       }
     ],
     "status": "aberto",
-    "acaoId": null
+    "acaoId": null,
+    "motivoStatus": null as string | null
   }
 ]

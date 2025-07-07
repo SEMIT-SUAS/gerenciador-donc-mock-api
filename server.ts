@@ -44,12 +44,13 @@ interface UpdateDenunciaParams {
 
 interface UpdateDenunciaBody {
     acaoId: number;
-    status: 'aberto' | 'em_andamento' | 'concluido';
+    status: 'aberto' | 'em_andamento' | 'concluido' | 'indeferido';
+    motivoStatus?: string;
 }
 
 server.patch<{ Params: UpdateDenunciaParams, Body: UpdateDenunciaBody }>("/denuncias/:id", (request, reply) => {
     const id = parseInt(request.params.id);
-    const { acaoId, status } = request.body;
+    const { acaoId, status, motivoStatus } = request.body;
 
     const denunciaIndex = denuncias.findIndex((d: any) => d.id === id);
 
@@ -61,6 +62,7 @@ server.patch<{ Params: UpdateDenunciaParams, Body: UpdateDenunciaBody }>("/denun
         ...denuncias[denunciaIndex],
         acaoId: acaoId,
         status: status,
+        motivoStatus: motivoStatus || null
     };
 
     denuncias[denunciaIndex] = denunciaAtualizada;
