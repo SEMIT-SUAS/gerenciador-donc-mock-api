@@ -22,7 +22,7 @@ export default [
       {
         "id": 13,
         "name": "holandeses_buraco_02.jpg"
-      }
+      } 
     ],
     "status": "em_andamento",
     "acaoId": 101,
